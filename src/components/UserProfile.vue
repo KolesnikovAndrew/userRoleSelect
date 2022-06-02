@@ -64,7 +64,6 @@ export default {
     }
   },
   async created() { 
-    console.log('aboba');
     this.user = await getUser(this.userId)
     console.log(this.user.roles);
     this.value = this.user.roles
